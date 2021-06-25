@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+     <!-- NAVBAR -->
+<section class="container">
+    <div>
+        <ul class="items">
+            <img src="img/logo.png" alt="logo" height="40"/>
+            <li class="li-item"><a class="color_a" href="index.html">მთვარი</a></li>
+            <li class="li-item"><a class="color_a" href="travel.html">მოგზაურობა</a></li>
+            <li class="li-item"><a class="color_a" href="#">კონტაქტი</a></li>
+        </ul>
+    </div>
+    <div>
+        <div class="input_position" style="float:left">               
+                <input class="input_search" type="search" placeholder="საძიებო ველი" aria-label="Search">
+                <button id="search" type="submit">ძებნა</button>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section>
+<div class="flext_conainers">
+
+    
+    <div class="location">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1kEO4gxe0Eg2Lro1cE48tjUsKUt8" width="500px" height="480" ></iframe>
+    </div>
+    <form id="registration" action="" method="POST" class="container_form">
+        <div>
+            <input class="styled_inputs" type="text" name="username" placeholder="სახელი">
+            <div class="error-text" id="error_username"></div>
+        </div>
+
+        <div>
+            <input class="styled_inputs" type="email" name="email" placeholder="მეილი">
+            <div class="error-text" id="error_email"></div>
+        </div>
+        <div>
+            <textarea style="margin-top: 15px;"  rows="22" cols="69" id="message" placeholder="შეტყობინება"></textarea>
+        </div>
+        
+
+        <button id="send" type="submit">გაგზავნა</button>
+        </div>
+    </form>
+    
+</div>    
+</section>
+
+
+
+    <!-- Footer -->
+    <section>
+        <footer class="footer_div">       
+            <div class="first_fot">
+                <a href="https://www.facebook.com/" target="_blank" class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook-f footer_icons" > </i>
+                </a>
+                <a href="https://twitter.com/Manutd_Daily123/status/1309896765831864321?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1309896765831864321%7Ctwgr%5Eshare_3&ref_url=https%3A%2F%2Fwww.manchestereveningnews.co.uk%2Fsport%2Ffootball%2Ftransfer-news%2Fmanchester-united-alex-telles-transfer-19005912" target="_blank" class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-twitter footer_icons"> </i>
+                </a>
+                <a href="https://www.google.com/" target="_blank" class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-google-plus-g footer_icons"> </i>
+                </a>
+                <a href="https://www.linkedin.com/"  target="_blank" class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin-in footer_icons"> </i>
+                </a>
+            </div>
+            <div class="first_fot"><p>
+                <i class="fa fa-envelope"></i>
+                <a style="color: #fff;" href="mailto:info@example.com">chiko@gmail.com</a>
+        
+                <i class="ml-3 fa fa-phone"></i>
+                <a style="color: #fff;" href="tel:+995555123456">+995581713106</a>
+            </p>
+            </div>
+            <div class="first_fot">© 2021 Copyright:
+                <a href="https://github.com/chikovani2001" target="_blank" style="color: #fff;"> ChikoTravels.ge</a>
+            </div>
+        </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

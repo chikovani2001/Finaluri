@@ -1,0 +1,268 @@
+/* header */
+*p{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(238, 238, 238);
+}
+.items{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: -40px;
+}
+
+.follow{
+    margin-top: 20px;
+    margin-right: 200px;
+}
+.li-item{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.logo_image{
+    margin-left: 15px;
+    margin-top: -5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.container{
+    width: 100%;
+    height: 50px;
+}
+.input_position{
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.input_search{
+    height: 35px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #0275d8;
+}
+#search{
+    border: 1px solid #0275d8;
+    color:#0275d8 ;
+    border-radius: 5px;
+    height: 35px;
+    width: 60px;
+}
+#search:hover{
+    background-color:#0275d8 ;
+    color: white;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.color_a{
+    color: #0275d8;
+}
+
+/* Slider */
+#gallery{
+    margin: 0 auto;
+    width: 100%;
+}
+#gallery img{
+    height: 500px;
+    width: 100%;
+    display: none;
+}
+#gallery img:first-child{
+    display: block;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -18%;
+}
+.prev{
+    color: white;
+    background-color: transparent;
+}
+.next{
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+/* BOX */
+.flex-box{
+    margin-top: 230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.image_box{
+    width: 294px;
+    height: 200px;
+    margin-top: 1px;
+}
+.box{
+    border-radius: 5px;
+    border: solid rgb(199, 199, 199);
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+}
+.box{
+    cursor: pointer;
+    transition-duration: 0.75s;
+}
+.box:hover{
+    box-shadow: 0px 1px 0px 3px rgb(43, 100, 214);
+}
+.box_text{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+/* About us */
+.aboutUs_box{
+    position: relative;
+    margin-top: 10px;
+    background-color: #0275d8;
+    width: 1100px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.aboutUs_item_positions{
+    position: absolute; 
+    left: 60px;
+}
+.First_aboutText{  
+    color: #fff;
+    font-size: 50px;
+    top: 30px;
+}
+.Second_aboutText{
+    color: #fff;
+    font-size: 25px;
+    top: 100px;
+}
+.hr_cla{
+    width: 100%;
+    border: 1px solid #046cc7;
+    border-radius: 5px;
+    position: absolute; 
+    top: 180px;
+}
+.Third_aboutText{
+    top: 230px;
+    color: #fff;
+    font-size: 25px;
+}
+.aboutUs_button{
+    top: 280px;
+    border: 1px solid #0275d8;
+    color:#0275d8 ;
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+}
+.aboutUs_button:hover{
+    cursor: pointer;
+    border: white;
+    transition-duration: 0.5s;
+}
+
+/* Footer */
+.footer_div{
+    background-color: #fff;
+    height: 120px;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0275d8;
+}
+.footer_icons{
+   margin-left: 10px;
+   color: #fff;
+   width: 30px;
+   height: 20px;
+}
+.first_fot{
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+travel style
+.text_header{
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+}
+.text_start{
+    font-size: 35px;
+    color: black;
+}
+.text_end{
+    width: 90px;
+    background-color: #0275d8;
+    border-radius: 5px;
+    border:  solid #0275d8;
+    margin-left: 5px;
+}
+.text_end_text{
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+.toggle_button{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+    color: #0275d8;
+    display: none;
+}
+
+@media (max-width: 768px){
+    .toggle_button{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .input_position{
+        display: none;
+        width: 100%;
+    }
+    .container{
+        height: 150px;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .items{        
+        flex-direction: column;
+    }
+    .navbar-links.active{
+        display: block;
+    }
+    .flex-box{
+        flex-direction: column;
+    }
+    .footer_div, .aboutUs_box{
+        width: 100%;
+    }
+    .hr_cla{
+        top: 210px;
+    }
+}
+
