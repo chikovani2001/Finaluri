@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-nino-mkhedruli-bold/css/bpg-nino-mkhedruli-bold.min.css">
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/arial-geo-bold/css/arial-geo-bold.min.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/login.css">
+    
+    <title>LogIn</title>
+</head>
+<body>
+    <div class="container">      
+        <form class="grid-container" id="login" action="" method="GET">
+            <div>
+                <input class="styled_input" type="text" name="username" placeholder="სახელი">
+                <div class="error_text" id="error_username"></div>
+            </div>
+            <div>
+                <input class="styled_input" type="password" name="password" placeholder="პაროლი">
+                <div class="error_text" id="error_password"></div>
+            </div>
+            <div>
+                <input class="styled_input" type="password" name="password_match" placeholder="გაიმეორეთ პაროლი">
+                <div class="error_text" id="error_password_match"></div>
+            </div>
+            <div>
+                <div class="style_radio">
+                    <input style="margin-top: 2px;" type="radio" name="Gender" value="male">
+                    <label for="Male">მამაკაცი</label>                       
+                    <input style="margin-top: 2px;" type="radio" name="Gender" value="female">
+                    <label for="FeMale">ქალი</label>
+                </div>
+                
+                <div class="error_text" id="error_Gender"></div>
+            </div>
+    
+            <div>
+                <div class="style_radio">
+                    <input style="margin-top: 2px;"  type="checkbox" name="agree" id="">
+                    <label class="checkboxlabel" for="agree">ვეთანხმები წესებს</label>
+                </div>
+                <div class="error_text" id="error_agree"></div>
+            </div>
+    
+            <button class="button_style" id="auth" type="submit">ავტორიზაცია</button>
+    
+        </form>    
+    </div>
+    <script type="module" src="/js/forms.js"></script>
+</body>
+</html>

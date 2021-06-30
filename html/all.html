@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
     <title>ALL</title>
 </head>
 <body>
-      <!-- NAVBAR -->
-<section class="container">
-    <div>
-        <ul class="items">
-            <img src="img/logo.png" alt="logo" height="40"/>
-            <li class="li-item"><a class="color_a" href="index.html">მთვარი</a></li>
-            <li class="li-item"><a class="color_a" href="#">მოგზაურობა</a></li>
-            <li class="li-item"><a class="color_a" href="contact.html">კონტაქტი</a></li>
-        </ul>
-    </div>
-    <div>
-        <div class="input_position" style="float:left">               
-                <input class="input_search" type="search" placeholder="საძიებო ველი" aria-label="Search">
-                <button id="search" type="submit">ძებნა</button>
+    <section class="container">
+        <div class = "navbar">
+            <img src="/img/logo.png" alt="logo" height="40"/>
+            <nav class="navbar-links" id="links">
+            <ul class="items">
+                <li class="li-item"><a class="color_a" href="#">მთვარი</a></li>
+                <li class="li-item"><a class="color_a" href="/html/travel.html">მოგზაურობა</a></li>
+                <li class="li-item"><a class="color_a" href="/html/contact.html">კონტაქტი</a></li>
+            </ul>
+        </nav>
         </div>
-    </div>
-
-
-
+        <div>
+            <div class="input_position" style="float:left">               
+                    <input class="input_search" type="search" placeholder="საძიებო ველი" aria-label="Search">
+                    <button id="search" type="submit">ძებნა</button>
+            </div>
+        </nav>  
+        </div>
+        <div class="toggle_button" id="toggleButton">
+            <i class="fas fa-bars"></i>
+        </div>
+    
+</section>
+    
 </section>
 <!-- Information -->
 <section>
@@ -38,7 +48,7 @@
           <th>რეგიონი</th>
           <th>მოსახლეობა</th>
         </tr>
-        <tbody id="result"></tbody>
+        <tbody id="res"></tbody>
       </table>
 </section>
 
@@ -65,6 +75,7 @@
         </div>
     </footer>
 </section>
-<script src="forall.js"></script>
+<script src="/js/forall.js"></script>
+<script src="/js/burgerBar.js"></script>
 </body>
 </html>

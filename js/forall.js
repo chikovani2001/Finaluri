@@ -1,4 +1,4 @@
-const fetchUknownData = () => {
+const fetchData = () => {
     fetch("https://restcountries.eu/rest/v2/all")
       .then((res) => res.json())
       .then((res) => {
@@ -11,12 +11,12 @@ const fetchUknownData = () => {
             <td>${item.population}</td>
           </tr>`;
         });
-        document.getElementById("result").innerHTML = content;
+        document.getElementById("res").innerHTML = content;
       })
       .catch(() => {
         document.getElementById("error").classList.remove("d-none");
       });
   };
   
-  fetchUknownData();
+  fetchData();
   

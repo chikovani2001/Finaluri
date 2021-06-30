@@ -28,17 +28,10 @@ next.onclick = function(){
 //go to contacts page from button
 let contact = document.getElementById('contact');
 contact.onclick = function(){
-    window.location.pathname = "/contact.html";
+    window.location.pathname = "html/contact.html";
 }
 
-//burger bars
 
-let navBarLinks = document.getElementById('links');
-let toggleButton = document.getElementById('toggleButton');
-
-toggleButton.addEventListener('click',function(){
-    navBarLinks.classList.toggle('active');
-})
 
 
 

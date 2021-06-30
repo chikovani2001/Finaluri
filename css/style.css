@@ -1,6 +1,7 @@
 /* header */
 *p{
-    font-family: 'Montserrat', sans-serif;
+    font-family: "BPG Irubaqidze", sans-serif;
+
 }
 .container{
     display: flex;
@@ -196,7 +197,7 @@
     margin-top: 10px;
 }
 
-travel style
+
 .text_header{
     margin-top: 15px;
     margin-left: 100px;
@@ -223,46 +224,4 @@ travel style
     font-weight: bold;
 }
 
-.toggle_button{
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 25px;
-    color: #0275d8;
-    display: none;
-}
-
-@media (max-width: 768px){
-    .toggle_button{
-        display: block;
-    }
-    .navbar-links{
-        display: none;
-    }
-    .input_position{
-        display: none;
-        width: 100%;
-    }
-    .container{
-        height: 150px;
-    }
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .items{        
-        flex-direction: column;
-    }
-    .navbar-links.active{
-        display: block;
-    }
-    .flex-box{
-        flex-direction: column;
-    }
-    .footer_div, .aboutUs_box{
-        width: 100%;
-    }
-    .hr_cla{
-        top: 210px;
-    }
-}
 

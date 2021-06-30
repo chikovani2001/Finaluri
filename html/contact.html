@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
@@ -13,50 +14,58 @@
 </head>
 <body>
      <!-- NAVBAR -->
-<section class="container">
-    <div>
-        <ul class="items">
-            <img src="img/logo.png" alt="logo" height="40"/>
-            <li class="li-item"><a class="color_a" href="index.html">მთვარი</a></li>
-            <li class="li-item"><a class="color_a" href="travel.html">მოგზაურობა</a></li>
-            <li class="li-item"><a class="color_a" href="#">კონტაქტი</a></li>
-        </ul>
-    </div>
-    <div>
-        <div class="input_position" style="float:left">               
-                <input class="input_search" type="search" placeholder="საძიებო ველი" aria-label="Search">
-                <button id="search" type="submit">ძებნა</button>
+     <section class="container">
+        <div class = "navbar">
+            <img src="/img/logo.png" alt="logo" height="40"/>
+            <nav class="navbar-links" id="links">
+            <ul class="items">
+                <li class="li-item"><a class="color_a" href="/index.html">მთვარი</a></li>
+                <li class="li-item"><a class="color_a" href="/html/travel.html">მოგზაურობა</a></li>
+                <li class="li-item"><a class="color_a" href="#">კონტაქტი</a></li>
+            </ul>
+        </nav>
         </div>
-    </div>
+        <div>
+            <div class="input_position" style="float:left">               
+                    <input class="input_search" type="search" placeholder="საძიებო ველი" aria-label="Search">
+                    <button id="search" type="submit">ძებნა</button>
+            </div>
+        </nav>  
+        </div>
+        <div class="toggle_button" id="toggleButton">
+            <i class="fas fa-bars"></i>
+        </div>
+    
+</section>
+    
 </section>
 
 <!-- Contact -->
 <section>
-<div class="flext_conainers">
-
-    
+<div class="flext_conainers">    
     <div class="location">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1kEO4gxe0Eg2Lro1cE48tjUsKUt8" width="500px" height="480" ></iframe>
+        <iframe  src="https://www.google.com/maps/d/embed?mid=1kEO4gxe0Eg2Lro1cE48tjUsKUt8" width="500px" height="480" ></iframe>
     </div>
     <form id="registration" action="" method="POST" class="container_form">
         <div>
             <input class="styled_inputs" type="text" name="username" placeholder="სახელი">
-            <div class="error-text" id="error_username"></div>
         </div>
 
         <div>
             <input class="styled_inputs" type="email" name="email" placeholder="მეილი">
-            <div class="error-text" id="error_email"></div>
         </div>
         <div>
-            <textarea style="margin-top: 15px;"  rows="22" cols="69" id="message" placeholder="შეტყობინება"></textarea>
+            <input type="number" class="styled_inputs" placeholder="ტელეფონის ნომერი">
         </div>
+        <div>
+            <textarea style="margin-top: 15px;" rows="20" cols="69"  id="message" placeholder="შეტყობინება"></textarea>
+        </div>
+
         
 
-        <button id="send" type="submit">გაგზავნა</button>
+        <button type="button" id="send">გაგზავნა</button>
         </div>
     </form>
-    
 </div>    
 </section>
 
@@ -92,6 +101,7 @@
             </div>
         </footer>
     </section>
-    <script src="script.js"></script>
+    <script src="/js/contact.js"></script>
+    <script src="/js/burgerBar.js"></script>
 </body>
 </html>
